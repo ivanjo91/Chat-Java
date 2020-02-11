@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ac" prefHeight="450.0" prefWidth="600.0" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorPantallaLogin">
+   <children>
+      <ComboBox fx:id="comboBoxServidor" layoutX="235.0" layoutY="51.0" onAction="#comboBoxServidor" prefWidth="150.0" />
+      <Label fx:id="lbUser" layoutX="229.0" layoutY="107.0" text="Usuario:" />
+      <Label fx:id="lbClave" layoutX="228.0" layoutY="189.0" text="Clave:" />
+      <TextField fx:id="txtUsuario" layoutX="228.0" layoutY="136.0" />
+      <TextField fx:id="txtClave" layoutX="228.0" layoutY="218.0" prefHeight="35.0" prefWidth="159.0" />
+      <Button fx:id="btnIniciarSesion" layoutX="263.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnIniciarSesion_OnAction" stylesheets="@estilo.css" text="Iniciar Sesión" />
+      <Button fx:id="btnRegistrarse" layoutX="268.0" layoutY="333.0" mnemonicParsing="false" onAction="#btnRegistrarse_OnAction" text="Registrarse" />
+      <Button fx:id="btnSalir" layoutX="287.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnSalir_OnAction" text="Salir" />
+      <Label layoutX="235.0" layoutY="23.0" text="Elegir servidor:" />
+   </children>
+</AnchorPane>

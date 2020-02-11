@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorVentanaChat">
+   <children>
+      <Label fx:id="lbUsuario" layoutX="30.0" layoutY="25.0" text="Label" />
+      <Button fx:id="btnVolver" layoutX="238.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnVolver_OnAction" text="Volver" />
+      <Button fx:id="btnListar" layoutX="365.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnListar_OnAction" text="Listar" />
+      <Button fx:id="btnEnviar" layoutX="929.0" layoutY="64.0" mnemonicParsing="false" onAction="#btnEnviar_OnAction" text="Enviar" />
+      <TextField fx:id="txtMensaje" layoutX="21.0" layoutY="59.0" prefHeight="35.0" prefWidth="891.0" />
+      <TableView fx:id="tableViewChat" layoutX="22.0" layoutY="108.0" prefHeight="572.0" prefWidth="955.0">
+        <columns>
+          <TableColumn fx:id="tableColumID" prefWidth="38.0" text="ID" />
+          <TableColumn fx:id="tableColumUsuario" prefWidth="118.0" text="Usuario" />
+            <TableColumn fx:id="tableColumFecha" prefWidth="283.0" text="Fecha" />
+            <TableColumn fx:id="tableColumMensaje" prefWidth="515.0" text="Mensaje" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
